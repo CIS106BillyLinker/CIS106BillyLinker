@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 08:31:46 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUk4M05CODE7MjAyNC0wOS0xOTswODoyOTo1OCBQTTszMzA3"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUk4M05CODE7MjAyNC0wOS0xOTswODozMTo0NiBQTTsxOzM0MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity, price, cost" type="Real" array="False" size=""/>
+            <input variable="quantity"/>
+            <input variable="price"/>
+            <assign variable="cost" expression="price * quantity"/>
+            <output expression="&quot;the price is &quot; &amp; cost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
