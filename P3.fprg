@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 07:31:06 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMDktMjY7MDc6Mjk6MjYgUE07MjM5OQ=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMDktMjY7MDc6MzE6MDYgUE07MTsyNDk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total, share" type="Real" array="False" size=""/>
+            <input variable="total"/>
+            <assign variable="share" expression="total/3"/>
+            <output expression="&quot;you each get $&quot; &amp; share" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

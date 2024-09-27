@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 07:50:00 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMDktMjY7MDc6NDc6MzIgUE07MjM5Ng=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMDktMjY7MDc6NTA6MDAgUE07MTsyNDkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius, area, perimeter" type="Real" array="False" size=""/>
+            <input variable="radius"/>
+            <assign variable="area" expression="3.174 * radius * radius"/>
+            <assign variable="perimeter" expression="2 * 3.174 * radius"/>
+            <output expression="&quot;area=&quot; &amp; area &amp; &quot; perimeter=&quot; &amp; perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

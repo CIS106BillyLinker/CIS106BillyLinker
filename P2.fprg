@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 07:29:23 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMDktMjY7MDc6MjY6MzUgUE07MjM5Ng=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMDktMjY7MDc6Mjk6MjMgUE07MTsyNTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="midterm, final, total" type="Real" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="midterm"/>
+            <input variable="final"/>
+            <assign variable="total" expression="midterm + final"/>
+            <output expression="lastname &amp; &quot; your point total is &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

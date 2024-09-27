@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 07:26:30 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMDktMjY7MDc6MjI6MDEgUE07MjM4NQ=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMDktMjY7MDc6MjY6MzAgUE07MTsyNDk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="shares, cost, price" type="Real" array="False" size=""/>
+            <declare name="ticker" type="String" array="False" size=""/>
+            <input variable="ticker"/>
+            <input variable="shares"/>
+            <input variable="cost"/>
+            <assign variable="price" expression="shares * cost"/>
+            <output expression="ticker &amp; &quot; $&quot;  &amp; price" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
