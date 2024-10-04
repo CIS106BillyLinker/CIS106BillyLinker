@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-03 07:37:15 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMDM7MDc6MzE6NTIgUE07MjM3OA=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMDM7MDc6Mzc6MTUgUE07MTsyNDkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="shareprice, shares, stockprice, value" type="Real" array="False" size=""/>
+            <input variable="shareprice"/>
+            <input variable="stockprice"/>
+            <input variable="shares"/>
+            <assign variable="value" expression="(stockprice - shareprice) * shares"/>
+            <output expression="value" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
