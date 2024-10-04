@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-03 08:19:56 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMDM7MDg6MTQ6MzUgUE07MjM4MQ=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMDM7MDg6MTk6NTYgUE07MTsyNDk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fixedcost, unitprice, unitcost, breakeven" type="Real" array="False" size=""/>
+            <input variable="fixedcost"/>
+            <input variable="unitprice"/>
+            <input variable="unitcost"/>
+            <assign variable="breakeven" expression="fixedcost/(unitprice-unitcost)"/>
+            <output expression="&quot;in order to breakeven you must sell &quot; &amp; breakeven &amp; &quot; units at $&quot; &amp; unitprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
