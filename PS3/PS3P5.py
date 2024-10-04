@@ -1,0 +1,5 @@
+fixedcost = float(input("Enter overhead cost: "))
+unitprice = float(input("Enter sale price of unit : "))
+unitcost = float(input("Enter cost of unit: "))
+breakeven = fixedcost/(unitprice-unitcost)
+print("In order to breakeven you must sell " + str(breakeven) + " units")
