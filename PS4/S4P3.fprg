@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-10 07:23:59 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMTA7MDc6MTY6MjMgUE07MjM3Nw=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMTA7MDc6MjM6NTkgUE07MjsyNDkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bookamount, bookcost, total, shipping" type="Real" array="False" size=""/>
+            <input variable="bookamount"/>
+            <input variable="bookcost"/>
+            <assign variable="total" expression="bookamount*bookcost"/>
+            <if expression="total&gt;50">
+                <then>
+                    <assign variable="shipping" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="shipping" expression="25"/>
+                </else>
+            </if>
+            <output expression="&quot;your total is &quot; &amp; total &amp; &quot; the shipping costs &quot; &amp; shipping" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

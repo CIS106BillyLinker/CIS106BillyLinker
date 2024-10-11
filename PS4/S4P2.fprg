@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-10 07:16:21 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMTA7MDc6MDY6NTIgUE07MjM3OA=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMTA7MDc6MTY6MjEgUE07MTsyNDgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity, unitprice, extendedprice" type="Real" array="False" size=""/>
+            <declare name="item" type="String" array="False" size=""/>
+            <input variable="item"/>
+            <input variable="quantity"/>
+            <if expression="item = &quot;A&quot;">
+                <then>
+                    <assign variable="unitprice" expression="10"/>
+                </then>
+                <else>
+                    <assign variable="unitprice" expression="20"/>
+                </else>
+            </if>
+            <assign variable="extendedprice" expression="quantity*unitprice"/>
+            <output expression="&quot;Item: &quot; &amp; item &amp; &quot; Unitprice: &quot; &amp; unitprice &amp; &quot; ExtendedPrice: &quot; &amp; extendedprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
