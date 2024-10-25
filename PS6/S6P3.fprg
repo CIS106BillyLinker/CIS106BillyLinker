@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-24 07:41:20 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMjQ7MDc6MDE6MDUgUE07MjM3Ng=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMjQ7MDc6NDE6MjAgUE07MjsyNDg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop, name" type="String" array="False" size=""/>
+            <declare name="midterm, final, counter" type="Integer" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <input variable="loop"/>
+            <assign variable="counter" expression="0"/>
+            <while expression="loop == &quot;Yes&quot;">
+                <input variable="name"/>
+                <input variable="midterm"/>
+                <input variable="final"/>
+                <assign variable="average" expression="(midterm+final)/2"/>
+                <output expression="name &amp; average" newline="True"/>
+                <assign variable="counter" expression="counter+1"/>
+                <input variable="loop"/>
+            </while>
+            <output expression="counter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

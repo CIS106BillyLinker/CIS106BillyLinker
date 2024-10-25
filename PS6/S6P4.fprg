@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-24 08:20:55 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMjQ7MDc6MDE6MDUgUE07MjM3Ng=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMjQ7MDg6MjA6NTUgUE07NDsyNDk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop, name" type="String" array="False" size=""/>
+            <declare name="hours, payrate, grosspay, counter, totalpay, averagepay" type="Real" array="False" size=""/>
+            <assign variable="totalpay" expression="0"/>
+            <assign variable="counter" expression="0"/>
+            <input variable="loop"/>
+            <while expression="loop == &quot;Yes&quot;">
+                <input variable="name"/>
+                <input variable="hours"/>
+                <input variable="payrate"/>
+                <if expression="hours&lt;=40">
+                    <then>
+                        <assign variable="grosspay" expression="payrate*hours"/>
+                    </then>
+                    <else>
+                        <assign variable="grosspay" expression="((hours-40)*1.5+40)*payrate"/>
+                    </else>
+                </if>
+                <output expression="name &amp; grosspay" newline="True"/>
+                <assign variable="counter" expression="counter+1"/>
+                <assign variable="totalpay" expression="totalpay+grosspay"/>
+                <output expression="counter &amp;  &quot; &quot; &amp;  totalpay" newline="True"/>
+                <input variable="loop"/>
+            </while>
+            <assign variable="averagepay" expression="totalpay/counter"/>
+            <output expression="averagepay" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
