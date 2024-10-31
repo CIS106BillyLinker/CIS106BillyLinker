@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="S6P4"/>
+        <attribute name="authors" value="Harper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-31 06:44:32 PM"/>
+        <attribute name="created" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMjQ7MDc6MDE6MDUgUE07MjM3Ng=="/>
+        <attribute name="edited" value="SGFycGVyO1kyMDNEVzE0OzIwMjQtMTAtMjQ7MDg6MjA6NTUgUE07NDsyNDk0"/>
+        <attribute name="edited" value="QmlsbHk7QklMTFktQ09NUDsyMDI0LTEwLTMxOzA2OjQ0OjMyIFBNOzI7MjYyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop, name" type="String" array="False" size=""/>
+            <declare name="counter, quantity, price, extendedprice, discount, discountamount, total, discounttotal" type="Real" array="False" size=""/>
+            <assign variable="counter" expression="0"/>
+            <assign variable="discounttotal" expression="0"/>
+            <input variable="loop"/>
+            <while expression="loop == &quot;Yes&quot;">
+                <input variable="quantity"/>
+                <input variable="price"/>
+                <assign variable="extendedprice" expression="quantity*price"/>
+                <if expression="extendedprice&gt;10000">
+                    <then>
+                        <assign variable="discount" expression="0.25"/>
+                    </then>
+                    <else>
+                        <assign variable="discount" expression="0.1"/>
+                    </else>
+                </if>
+                <assign variable="discountamount" expression="discount*extendedprice"/>
+                <assign variable="total" expression="extendedprice-discountamount"/>
+                <output expression="&quot;ExtendedPrice: &quot; &amp; extendedprice &amp; &quot; discountamount: &quot; &amp; discountamount &amp; &quot; Total: &quot; &amp; total" newline="True"/>
+                <assign variable="discounttotal" expression="discounttotal+discountamount"/>
+                <output expression="&quot;Discount Total: &quot; &amp; discounttotal" newline="True"/>
+                <assign variable="counter" expression="counter+1"/>
+                <input variable="loop"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
