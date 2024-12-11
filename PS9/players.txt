@@ -1,0 +1,10 @@
+John Doe,0.32
+Jane Smith,0.275
+Alice Johnson,0.29
+Bob Brown,0.31
+Charlie Davis,0.3
+Diana Prince,0.34
+Ethan Hunt,0.265
+Fiona Apple,0.28
+George Lucas,0.295
+Hannah Montana,0.33
